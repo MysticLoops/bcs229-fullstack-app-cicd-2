@@ -1,0 +1,52 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body style="text-align:center; margin-top:50px; font-family:Arial;">
+
+    <h1>Full Stack App</h1>
+
+    <h2 id="name"></h2>
+    <h3 id="roll"></h3>
+    <h3 id="reg"></h3>
+
+    <script>
+        fetch("http://backend:5000/student-details")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("name").innerText = "Name: " + data.name;
+            document.getElementById("roll").innerText = "Roll No: " + data.roll;
+            document.getElementById("reg").innerText = "Register No: " + data.register;
+        });
+    </script>
+
+</body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Details</title>
+</head>
+<body style="text-align:center; margin-top:50px; font-family:Arial;">
+
+    <h1>Full Stack App</h1>
+
+    <h2 id="name"></h2>
+    <h3 id="roll"></h3>
+    <h3 id="reg"></h3>
+
+    <script>
+        fetch("http://localhost:5000/student-details")
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("name").innerText = "Name: " + data.name;
+            document.getElementById("roll").innerText = "Roll No: " + data.roll;
+            document.getElementById("reg").innerText = "Register No: " + data.register;
+        });
+    </script>
+
+</body>
+>>>>>>> d8f3121 (Initial project commit)
+</html>

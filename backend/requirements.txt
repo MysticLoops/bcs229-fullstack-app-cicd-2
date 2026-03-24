@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+flask
+=======
+flask
+flask-cors
+>>>>>>> d8f3121 (Initial project commit)
