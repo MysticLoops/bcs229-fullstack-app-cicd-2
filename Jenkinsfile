@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 pipeline {
     agent any
 
@@ -89,5 +88,4 @@ pipeline {
             }
         }
     }
->>>>>>> d8f3121 (Initial project commit)
 }
